@@ -91,7 +91,7 @@ Insight: The top 10% of customers spend more than 3x the average, indicating pot
 
 - High-spending customers represent a small segment but drive a large portion of revenue.
 
-## 📈 Optional Dashboard
+## 📈 Dashboard
 
 - Visualizations were created using EXCEL to show:
 
