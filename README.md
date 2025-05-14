@@ -116,4 +116,4 @@ Insight: The top 10% of customers spend more than 3x the average, indicating pot
 ## 📬 Contact
 
 **Cyndi Li Shan**
-*Aspiring Junior Data Analystcyndi.shan0101@gmail.com | linkedin.com/in/li-shan-80980a1b9 | github.com/cyndishan*
+*Aspiring Junior Data Analyst cyndi.shan0101@gmail.com | linkedin.com/in/li-shan-80980a1b9 | github.com/cyndishan*
