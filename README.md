@@ -37,6 +37,8 @@ This project analyzes a fictional retail company's sales data using SQL to uncov
 ## 🧪 SQL Questions & Tasks
 
 - 1. 📅 Monthly Sales Trends
+ sql
+ ```
 
 SELECT
     DATE_TRUNC('month', OrderDate) AS Month,
@@ -44,11 +46,12 @@ SELECT
 FROM SalesData
 GROUP BY Month
 ORDER BY Month;
-
+```
 Insight: Sales peak in December, likely due to holiday shopping, with a noticeable drop in January.
 
 - 2. 🛒 Top 5 Best-Selling Products
-
+sql
+ ```
 SELECT
     ProductName,
     SUM(Sales) AS TotalSales
@@ -56,29 +59,31 @@ FROM SalesData
 GROUP BY ProductName
 ORDER BY TotalSales DESC
 LIMIT 5;
-
+```
 Insight: Electronics dominate the top-selling list, suggesting strong demand and opportunity for upselling.
 
 - 3. 🌍 Sales by Location
-
+sql
+ ```
 SELECT
     Location,
     SUM(Sales) AS TotalSales
 FROM SalesData
 GROUP BY Location
 ORDER BY TotalSales DESC;
-
+```
 Insight: Store A generates 30% more revenue than Store B, especially in the electronics category.
 
 - 4. 👥 Average Order Value per Customer
-
+sql
+ ```
 SELECT
     CustomerID,
     ROUND(AVG(Sales), 2) AS AvgOrderValue
 FROM SalesData
 GROUP BY CustomerID
 ORDER BY AvgOrderValue DESC;
-
+```
 Insight: The top 10% of customers spend more than 3x the average, indicating potential for loyalty programs.
 
 ## 📌 Key Business Insights
