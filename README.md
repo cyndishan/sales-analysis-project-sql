@@ -32,7 +32,7 @@ This project analyzes a fictional retail company's sales data using SQL to uncov
 
 - DBMS: PostgreSQL / MySQL / SQLite (your choice)
 
-- (Optional) Excel or Power BI for visualization
+- Excel for visualization
 
 ## 🧪 SQL Questions & Tasks
 
