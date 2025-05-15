@@ -16,7 +16,7 @@ This project analyzes a fictional retail company's sales data using SQL to uncov
 
 - DBMS: MySQL 
 
-- Excel for visualization
+- Python for visualization
 
 ## 📌 Methodology
 
@@ -36,7 +36,7 @@ This project analyzes a fictional retail company's sales data using SQL to uncov
 
   Customer purchase behavior
 
-- Used Excel to create clear and simple visualizations (bar charts, line graphs) from query results.
+- Used Python to create clear and simple visualizations (bar charts, line graphs) from query results.
 
 - Embedded charts and summarized findings in this README.md to effectively communicate data insights.
 
@@ -44,7 +44,7 @@ This project analyzes a fictional retail company's sales data using SQL to uncov
 
 ## 🧪 SQL Executions & Tasks
 
-Create all the tables following the same order as when referencing keys it would throw errors:
+Create all the tables in MySQL Workbench Environment following the same order as when referencing keys it would throw errors:
 ```
 -- create database
 CREATE DATABASE SalesPractice_db;
@@ -155,7 +155,9 @@ CREATE TABLE Stocks (
 );
 ```
 
-- 1. 📅 Monthly Sales Trends
+- 1. Total Sales performance of each store
+     
+- 2. 📅 Monthly Sales Trends
  sql
  ```
 
@@ -217,7 +219,7 @@ Insight: The top 10% of customers spend more than 3x the average, indicating pot
 
 ## 📈 Dashboard
 
-- Visualizations were created using EXCEL to show:
+- Visualizations were created using Python to show:
 
 - Sales trends over time
 
