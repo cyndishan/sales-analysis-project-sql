@@ -1,4 +1,4 @@
-# 📊 Sales Performance Analysis (SQL Project)
+# 📊 Sales Performance Analysis (SQL & Python Project)
 
 ## 🧠 Project Overview
 
