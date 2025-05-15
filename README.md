@@ -6,33 +6,41 @@ This project analyzes a fictional retail company's sales data using SQL to uncov
 
 ## 📂️ Dataset
 
-- Name: Retail Sales DatasetSource: Kaggle - Sales Dataset or a cleaned CSV fileContents:
+- Name: Retail Sales DatasetSource: Kaggle - Sales Dataset:
 
-- OrderID
-
-- OrderDate
-
-- CustomerID
-
-- ProductCategory
-
-- ProductName
-
-- Quantity
-
-- UnitPrice
-
-- Location
-
-- Sales (calculated as Quantity × UnitPrice)
+- Table names: Brands, Categories, Customers, Order_items, Orders, Products, Staffs, Stocks, Stores
 
 ## 🔧 Tools Used
 
 - SQL: For querying and analysis
 
-- DBMS: PostgreSQL / MySQL / SQLite (your choice)
+- DBMS: MySQL 
 
 - Excel for visualization
+
+## 📌 Methodology
+
+- Created a new MySQL database to store and organize data from multiple CSV files.
+
+- Defined relational tables based on the dataset structure, ensuring primary and foreign key relationships were established.
+
+- Imported data into MySQL using the Table Data Import Wizard in MySQL Workbench for each table (e.g., Customers, Orders, Products, etc.).
+
+- Wrote and executed SQL queries to explore key areas such as:
+
+  Total and monthly sales performance
+
+  Best-selling products and categories
+
+  Store-wise revenue comparison
+
+  Customer purchase behavior
+
+- Used Excel to create clear and simple visualizations (bar charts, line graphs) from query results.
+
+- Embedded charts and summarized findings in this README.md to effectively communicate data insights.
+
+- Demonstrated the full cycle of data analysis — from importing raw data to generating insights and visuals for storytelling.
 
 ## 🧪 SQL Questions & Tasks
 
