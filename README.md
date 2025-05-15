@@ -24,7 +24,7 @@ This project analyzes a fictional retail company's sales data using SQL to uncov
 
 - Defined relational tables based on the dataset structure, ensuring primary and foreign key relationships were established.
 
-- Imported data into MySQL using the Table Data Import Wizard in MySQL Workbench for each table (e.g., Customers, Orders, Products, etc.).
+- Imported data into MySQL using the Table Data Import Wizard in MySQL Workbench for each table (e.g., Brands, Categories, Stores, etc.).
 
 - Wrote and executed SQL queries to explore key areas such as:
 
