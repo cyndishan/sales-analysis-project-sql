@@ -153,7 +153,7 @@ CREATE TABLE Stocks (
 );
 ```
 
-- 1. Total Sales performance of each store
+- 1. 💰Total Sales performance of each store
 sql
 ```
 SELECT 
@@ -190,26 +190,35 @@ ORDER BY TotalSales DESC
 LIMIT 5;
 ```
 
-- 3. 🌍 Sales by Location
+- 3. 🚲 Best selling products
 sql
  ```
-SELECT
-    Location,
-    SUM(Sales) AS TotalSales
-FROM SalesData
-GROUP BY Location
-ORDER BY TotalSales DESC;
+SELECT 
+    p.product_name, 
+    SUM(oi.quantity) AS total_units_sold
+FROM products p
+JOIN order_items oi ON p.product_id = oi.product_id
+GROUP BY p.product_name
+ORDER BY total_units_sold DESC
+LIMIT 10;
 ```
 
-- 4. 👥 Average Order Value per Customer
+- 4. 🔥Best selling categories
 sql
  ```
-SELECT
-    CustomerID,
-    ROUND(AVG(Sales), 2) AS AvgOrderValue
-FROM SalesData
-GROUP BY CustomerID
-ORDER BY AvgOrderValue DESC;
+SELECT 
+    c.category_name,
+    ROUND(SUM(oi.quantity * oi.list_price * (1 - oi.discount)), 2) AS total_sales
+FROM 
+    Order_items oi
+JOIN 
+    Products p ON oi.product_id = p.product_id
+JOIN 
+    Categories c ON p.category_id = c.category_id
+GROUP BY 
+    c.category_name
+ORDER BY 
+    total_sales DESC;
 ```
 
 ## 📈 Dashboard
