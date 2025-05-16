@@ -30,9 +30,7 @@ This project analyzes a fictional retail company's sales data using SQL to uncov
 
   Total and monthly sales performance
 
-  Best-selling products and categories
-
-  Customer purchase behavior
+  Best-selling products and categories  
 
 - Used PowerBI to create interactive visualizations.
   
