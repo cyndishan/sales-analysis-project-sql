@@ -6,7 +6,7 @@ This project analyzes a fictional retail company's sales data using SQL to uncov
 
 ## 📂️ Dataset
 
-- Name: Retail Sales DatasetSource: Kaggle - Sales Dataset:
+- Name: Retail Sales DatasetSource: Kaggle - Sales Dataset
 
 - Table names: Brands, Categories, Customers, Order_items, Orders, Products, Staffs, Stocks, Stores
 
