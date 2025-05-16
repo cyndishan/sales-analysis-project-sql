@@ -1,8 +1,8 @@
-# 📊 Sales Performance Analysis (SQL & Python Project)
+# 📊 Sales Performance Analysis (SQL & PowerBI Project)
 
 ## 🧠 Project Overview
 
-This project analyzes a fictional retail company's sales data using SQL to uncover trends and performance patterns across time, products, and customer segments. The goal is to generate insights that can support decision-making for marketing, inventory, and sales strategies.
+This project analyzes a fictional retail company's sales data using SQL to uncover trends and performance patterns across stores, time, and products. The goal is to generate insights that can support decision-making for marketing and sales strategies.
 
 ## 📂️ Dataset
 
@@ -16,7 +16,7 @@ This project analyzes a fictional retail company's sales data using SQL to uncov
 
 - DBMS: MySQL 
 
-- Python for visualization
+- PowerBI for visualization
 
 ## 📌 Methodology
 
@@ -32,12 +32,10 @@ This project analyzes a fictional retail company's sales data using SQL to uncov
 
   Best-selling products and categories
 
-  Store-wise revenue comparison
-
   Customer purchase behavior
 
-- Used Python to create clear and simple visualizations (bar charts, line graphs) from query results.
-
+- Used PowerBI to create interactive visualizations.
+  
 - Embedded charts and summarized findings in this README.md to effectively communicate data insights.
 
 - Demonstrated the full cycle of data analysis — from importing raw data to generating insights and visuals for storytelling.
@@ -156,6 +154,17 @@ CREATE TABLE Stocks (
 ```
 
 - 1. Total Sales performance of each store
+sql
+```
+SELECT 
+    s.store_name,
+    ROUND(SUM(oi.list_price * oi.quantity * (1 - oi.discount)), 2) AS total_sales
+FROM stores s
+JOIN orders o ON s.store_id = o.store_id
+JOIN order_items oi ON o.order_id = oi.order_id
+GROUP BY s.store_name
+ORDER BY total_sales DESC;
+```
      
 - 2. 📅 Monthly Sales Trends
  sql
@@ -168,7 +177,6 @@ FROM SalesData
 GROUP BY Month
 ORDER BY Month;
 ```
-Insight: Sales peak in December, likely due to holiday shopping, with a noticeable drop in January.
 
 - 2. 🛒 Top 5 Best-Selling Products
 sql
@@ -181,7 +189,6 @@ GROUP BY ProductName
 ORDER BY TotalSales DESC
 LIMIT 5;
 ```
-Insight: Electronics dominate the top-selling list, suggesting strong demand and opportunity for upselling.
 
 - 3. 🌍 Sales by Location
 sql
@@ -193,7 +200,6 @@ FROM SalesData
 GROUP BY Location
 ORDER BY TotalSales DESC;
 ```
-Insight: Store A generates 30% more revenue than Store B, especially in the electronics category.
 
 - 4. 👥 Average Order Value per Customer
 sql
@@ -205,39 +211,48 @@ FROM SalesData
 GROUP BY CustomerID
 ORDER BY AvgOrderValue DESC;
 ```
-Insight: The top 10% of customers spend more than 3x the average, indicating potential for loyalty programs.
-
-## 📌 Key Business Insights
-
-- Electronics is the top-performing category overall.
-
-- December sees the highest monthly sales, while January is the lowest.
-
-- Store A consistently outperforms Store B, except in Books category.
-
-- High-spending customers represent a small segment but drive a large portion of revenue.
 
 ## 📈 Dashboard
 
-- Visualizations were created using Python to show:
+- Visualizations were created using PowerBI to show:
 
 - Sales trends over time
 
 - Sales by category and location
 
-- Customer segmentation based on spending
+- Sales of product name
 
-*→ Screenshot available in */images/dashboard.png
+*→ Screenshot available in *![image](https://github.com/user-attachments/assets/6a27c93c-6ac3-4814-b114-a102f86d2005)
 
-## 🚀 Next Steps
+## 📌 Key Insights
 
-- Recommend promotional campaigns during low-sales months.
+- 🏬 Baldwin Bikes outperformed the other two stores with a total sales figure of $5.2 million between 2016 and 2018.
 
-- Expand inventory for top-selling products.
+- 🚲 The best-selling product was Trek Slash 8 27.5, generating $560K in 2016 alone.
 
-- Explore reasons behind underperformance in books (Store A).
+- 📉 Sales trends for all the stores followed a similar pattern:
 
-- Consider loyalty incentives for high-spending customers.
+ 1. A rise in sales from 2016 to 2017
+
+ 2. A consistent decline from 2017 to the end of 2018, falling below 2016 levels
+
+- 🥇 The top-performing product categories were:
+
+ 1. Mountain Bikes – $2.7 million
+
+ 2. Road Bikes – $1.7 million
+
+ 3. Cruisers Bicycles – $1.0 million
+
+## ✅ Actionable Suggestions
+
+🔍 Investigate the sales decline in 2018, especially for Baldwin and Santa Cruz stores. Analyze internal and external factors like pricing, customer satisfaction, or market competition.
+
+🎯 Focus future marketing and inventory on top-performing categories like Mountain Bikes and Road Bikes to maximize return.
+
+🛒 Restock and promote best-sellers such as the Trek Slash 8 27.5, or explore product updates to reignite sales.
+
+📆 Consider launching seasonal or Q4 campaigns, as early trends suggest stronger year-end performance.
 
 ## 📬 Contact
 
