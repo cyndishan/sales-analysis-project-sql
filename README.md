@@ -2,7 +2,7 @@
 
 ## 🧠 Project Overview
 
-This project analyzes a fictional retail company's sales data using SQL to uncover trends and performance patterns across stores, time, and products. The goal is to generate insights that can support decision-making for marketing and sales strategies.
+This project analyzes a bicycle retail company's sales data using SQL to uncover trends and performance patterns across stores, time, and products. The goal is to generate insights that can support decision-making for marketing and sales strategies.
 
 ## 📂️ Dataset
 
