@@ -176,18 +176,6 @@ GROUP BY Month
 ORDER BY Month;
 ```
 
-- 2. 🛒 Top 5 Best-Selling Products
-sql
- ```
-SELECT
-    ProductName,
-    SUM(Sales) AS TotalSales
-FROM SalesData
-GROUP BY ProductName
-ORDER BY TotalSales DESC
-LIMIT 5;
-```
-
 - 3. 🚲 Best selling products
 sql
  ```
