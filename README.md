@@ -207,6 +207,37 @@ ORDER BY
     total_sales DESC;
 ```
 
+- 5. 🔥Best 3 yearly top selling categories
+sql
+ ```
+SELECT 
+    year,
+    category_name,
+    total_sales
+FROM (
+    SELECT 
+        YEAR(o.order_date) AS year,
+        c.category_name,
+        ROUND(SUM(oi.quantity * oi.list_price * (1 - oi.discount)), 2) AS total_sales,
+        RANK() OVER (
+            PARTITION BY YEAR(o.order_date) 
+            ORDER BY SUM(oi.quantity * oi.list_price * (1 - oi.discount)) DESC
+        ) AS category_rank
+    FROM 
+        Order_items oi
+    JOIN 
+        Orders o ON oi.order_id = o.order_id
+    JOIN 
+        Products p ON oi.product_id = p.product_id
+    JOIN 
+        Categories c ON p.category_id = c.category_id
+    GROUP BY 
+        YEAR(o.order_date), c.category_name
+) AS ranked_categories
+WHERE category_rank <= 3
+ORDER BY year, category_rank;
+```
+
 ## 📈 Dashboard
 
 - Visualizations were created using PowerBI to show:
