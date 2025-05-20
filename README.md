@@ -6,7 +6,7 @@ This project analyzes a bicycle retail company's sales data using SQL to uncover
 
 ## 📂️ Dataset
 
-- Name: Retail Sales DatasetSource: Kaggle - Sales Dataset
+- Name: Retail Sales DatasetSource: Kaggle - [Sales Dataset](https://www.kaggle.com/datasets/dillonmyrick/bike-store-sample-database)
 
 - Table names: Brands, Categories, Customers, Order_items, Orders, Products, Staffs, Stocks, Stores
 
