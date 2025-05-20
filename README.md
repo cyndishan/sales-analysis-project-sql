@@ -163,6 +163,8 @@ JOIN order_items oi ON o.order_id = oi.order_id
 GROUP BY s.store_name
 ORDER BY total_sales DESC;
 ```
+![image](https://github.com/user-attachments/assets/644cdb6f-5f24-407a-b50c-d6d43d76bfd2)
+
      
 - 2. 📅 Monthly Sales Trends
  sql
@@ -175,6 +177,15 @@ FROM SalesData
 GROUP BY Month
 ORDER BY Month;
 ```
+![image](https://github.com/user-attachments/assets/3623cdae-f08a-4bdc-bc38-0099c98160d4)
+![image](https://github.com/user-attachments/assets/43d6c036-12c6-4d72-833e-8a65c4737a64)
+![image](https://github.com/user-attachments/assets/43e36ecc-ed45-41cf-98cd-d2f4ece56a8a)
+![image](https://github.com/user-attachments/assets/3910c8aa-13e9-43da-b483-c9ffffa338d6)
+![image](https://github.com/user-attachments/assets/3e6df770-d0e2-44de-b85c-ba4be1c9a0d8)
+![image](https://github.com/user-attachments/assets/d9386400-9bc3-4e58-bd3b-acd624b04fbd)
+![image](https://github.com/user-attachments/assets/8fe49e60-2683-4eb7-9a75-3a78b1ba8dff)
+![image](https://github.com/user-attachments/assets/508aef2e-2ba5-4d62-a790-7f8c531f675a)
+
 
 - 3. 🚲 Best selling products
 sql
@@ -188,6 +199,8 @@ GROUP BY p.product_name
 ORDER BY total_units_sold DESC
 LIMIT 10;
 ```
+![image](https://github.com/user-attachments/assets/43790ce3-6c5d-464a-b033-4b9319658ef4)
+
 
 - 4. 🔥Best selling categories
 sql
@@ -206,6 +219,8 @@ GROUP BY
 ORDER BY 
     total_sales DESC;
 ```
+![image](https://github.com/user-attachments/assets/9f1a4c2e-5cb2-4746-bfbd-ce7af1b49756)
+
 
 - 5. 🔥Best 3 yearly top selling categories
 sql
@@ -237,6 +252,8 @@ FROM (
 WHERE category_rank <= 3
 ORDER BY year, category_rank;
 ```
+![image](https://github.com/user-attachments/assets/b8a4cd11-29e4-4dad-a3d1-16b8fa015d37)
+
 
 ## 📈 Dashboard
 
