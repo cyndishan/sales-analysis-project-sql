@@ -300,4 +300,4 @@ ORDER BY year, category_rank;
 ## 📬 Contact
 
 **Cyndi Li Shan**
-*Aspiring Junior Data Analyst cyndi.shan0101@gmail.com | linkedin.com/in/li-shan-80980a1b9 | github.com/cyndishan*
+*Aspiring Junior Data Analyst cyndi.shan0101@gmail.com | linkedin.com/in/cyndi-li-shan| github.com/cyndishan*
