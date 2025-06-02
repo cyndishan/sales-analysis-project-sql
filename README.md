@@ -296,8 +296,3 @@ ORDER BY year, category_rank;
 🛒 Restock and promote best-sellers such as the Trek Slash 8 27.5, or explore product updates to reignite sales.
 
 📆 Consider launching seasonal or Q4 campaigns, as early trends suggest stronger year-end performance.
-
-## 📬 Contact
-
-**Cyndi Li Shan**
-*Aspiring Junior Data Analyst cyndi.shan0101@gmail.com | linkedin.com/in/cyndi-li-shan| github.com/cyndishan*
